@@ -14,7 +14,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Food"
+        android:text="Order Confirmation"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
@@ -22,49 +22,55 @@
 
     <!-- Confirmation Nama Makanan -->
     <TextView
+        android:id="@+id/tvFoodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food Name: Batagor"
+        android:text="Food Name: "
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
     <!-- Confirmation Jumlah Porsi -->
     <TextView
+        android:id="@+id/tvServings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of Servings: 2 pax"
+        android:text="Number of Servings: "
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Confirmation Nama pengorder -->
+    <!-- Confirmation Nama Pemesan -->
     <TextView
+        android:id="@+id/tvOrderingName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ordering Name: Usep"
+        android:text="Ordering Name: "
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Input Catatan Tambahan -->
+    <!-- Confirmation Catatan Tambahan -->
     <TextView
+        android:id="@+id/tvNotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Additional Notes: Tidak Pedas"
+        android:text="Additional Notes: "
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Input Catatan Tambahan -->
+    <!-- Pesan Terima Kasih -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thanks for your order and please wait for delivering by nearest courier"
+        android:text="Thanks for your order and please wait for delivery by nearest courier."
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
+    <!-- Tombol Kembali ke Menu -->
     <Button
         android:id="@+id/backtoMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Menu" />
+        android:text="Back to Menu"
+        android:backgroundTint="#f6a77a"/>
 
 </LinearLayout>

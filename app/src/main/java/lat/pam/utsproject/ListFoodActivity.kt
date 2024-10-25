@@ -30,7 +30,15 @@ class ListFoodActivity : AppCompatActivity() {
         foodList = listOf(
             Food("Batagor", "Batagor asli enak dari Bandung", R.drawable.batagor),
             Food("Black Salad", "Salad segar yang dibuat secara langsung", R.drawable.black_salad),
-            Food("Cappucino", "Kopi cappucino asli yang dibuat dari Kopi Arabica", R.drawable.cappuchino)
+            Food("Cappucino", "Kopi cappucino asli yang dibuat dari Kopi Arabica", R.drawable.cappuchino),
+            Food("cireng", "cireng nikmat gabikin galau", R.drawable.cireng),
+            Food("donut", "donut lumer enak nagih", R.drawable.donut),
+            Food("cheesecake", "cheesecake kejunya bikin lumer di mulut", R.drawable.cheesecake),
+            Food("kopi hitam", "kopi hitam torabika", R.drawable.kopi_hitam),
+            Food("mie_goreng", "mie goreng kampung", R.drawable.mie_goreng),
+            Food("nasi goreng", "nasi goreng kampung", R.drawable.nasigoreng),
+            Food("sprakling tea", "enaknya teh di kombinasikan soda", R.drawable.sparkling_tea)
+
         )
 
         recyclerView.adapter = object : RecyclerView.Adapter<FoodViewHolder>() {
@@ -44,7 +52,9 @@ class ListFoodActivity : AppCompatActivity() {
                 val food = foodList[position]
                 holder.foodName.text = food.name
                 holder.foodDescription.text = food.description
-                holder.foodImage.setImageResource(food.imageResource)
+                holder.foodImage.setImageResource(food.imageResourceId)
+
+
 
                 holder.itemView.setOnClickListener {
                     val intent = Intent(this@ListFoodActivity, OrderActivity::class.java)
@@ -69,5 +79,6 @@ class ListFoodActivity : AppCompatActivity() {
         val foodName: TextView = view.findViewById(R.id.foodName)
         val foodDescription: TextView = view.findViewById(R.id.foodDescription)
         val foodImage: ImageView = view.findViewById(R.id.foodImage)
+
     }
 }
